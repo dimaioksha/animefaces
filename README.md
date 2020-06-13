@@ -4,7 +4,9 @@ I'm using `Python 3.6`.
 
 [***Objective***](https://github.com/DmitryIo/animefaces#objective)
 
-[***Dataset***](https://github.com/DmitryIo/animefaces#dataset)
+[***Concepts***](https://github.com/DmitryIo/animefaces#concepts)
+
+[***Implementation***](https://github.com/DmitryIo/animefaces#implementation)
 
 # Objective
 
@@ -16,4 +18,30 @@ My main goal was creating a programm which would be able to preprocess and work 
 
 ![](./img/girls2.jpg)
 
-It is easy to see similarity for human between these photoes. But how can a computer can solve this problem?
+It is easy to see similarity for human between these photos. But how can a computer solve this problem?
+
+# Concepts
+
+**Encoder**
+
+For this task i have implemented machine learning architecture, which is called 'Encoder&Decoder architecture'
+Typically, a model that generates arrays will use an Encoder to encode the input into a fixed form and a Decoder to decode it, pixel by pixel, into an array.
+
+`How it works:`
+![](./img/encoder.jpg)
+
+**Decoder**
+
+Decoder is used just for training encoder and for my task i dont use it more.
+
+# Implementation
+
+**Dataset**
+
+For this task i have found [Kaggle](https://www.kaggle.com/) dataset. The link to download it - https://drive.google.com/file/d/10DAA6GOT6K9I7w0ibYnt_HzNPac03s6b/view?usp=sharing
+
+It contains 100.000 pixel images 64x64. The kind of it you could see at [Objective](https://github.com/DmitryIo/animefaces#objective)
+
+**Coding**
+
+Full process of coding described in my [Notebook]('https://github.com/DmitryIo/animefaces/autoencoder.ipynb')
