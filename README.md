@@ -8,6 +8,8 @@ I'm using `Python 3.6`.
 
 [***Implementation***](https://github.com/DmitryIo/animefaces#implementation)
 
+[***Results***](https://github.com/DmitryIo/animefaces#results)
+
 # Objective
 
 **To build a model that can convert pixel images into array of numbers**
@@ -44,4 +46,12 @@ It contains 100.000 pixel images 64x64. The kind of it you could see at [Objecti
 
 **Coding**
 
-Full process of coding described in my [Notebook]('https://github.com/DmitryIo/animefaces/autoencoder.ipynb')
+Full process of coding described in my [Notebook](autoencoder.ipynb) `All comments are Russian there`
+
+# Results
+
+The result of my work is: 
+ **1) I have learned how to use autoencoder and decoder to process images**
+ **2) Now i can work with all these arrays of images like i want to. And there is my next project, in which i have used all this stuff [Project](https://github.com/DmitryIo/animebot)**
+ 
+Thank you for attention!
