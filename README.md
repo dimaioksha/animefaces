@@ -52,6 +52,7 @@ Full process of coding described in my [Notebook](autoencoder.ipynb) `All commen
 
 The result of my work is: 
  **1) I have learned how to use autoencoder and decoder to process images**
+ 
  **2) Now i can work with all these arrays of images like i want to. And there is my next project, in which i have used all this stuff [Project](https://github.com/DmitryIo/animebot)**
  
 Thank you for attention!
