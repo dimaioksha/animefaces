@@ -56,6 +56,49 @@ This is the implementation in my code:
 
 ![](./img/datagenerator.PNG)
 
+We create template for generator `train_datagen` and then we read the images in `train_generator` setting the batch size.
+
+The next step is the creating the autoencoder which in my code is described in function `create_deep_conv_ae`.
+
+![](./img/autoencoder.PNG)
+
+The main idea here is to create layers which take `(64, 64, 3)` shape and then return `(8, 8, 3)` shape image. Here are two models: encoder and decoder. 
+
+Here is described the process of teaching model.
+
+![](./img/learning.PNG)
+
+After learning parameters we can pass through encoder images and get vector represantation of it:
+
+![](./img/vectorization.PNG)
+
+At this moment we create an empty DataFrame in which we will save the similarity in future.
+
+![](./img/dataframe.PNG)
+
+Now we can put all the similarities in our DataFrame! There are 1.0 at the diagonals. This is a sign of the thing that all passed correctly.
+
+![](./img/dataframe_full.PNG)
+
+This is the final function which shows the most similar photo by the given one.
+
+![](./img/function.PNG)
+
+
+Examples of how it works:
+
+This is the 10th photo and the most similar to 10th photo.
+
+![](./img/result_1.PNG)
+
+This is the 14th photo and the most similar to 14th photo.
+
+![](./img/result_2.PNG)
+
+This is the 100th photo and the most similar to 100th photo(the mimics)
+
+![](./img/result_3.PNG)
+
 Full process of coding described in my [Notebook](autoencoder.ipynb) `All comments are Russian there`
 
 # Results
