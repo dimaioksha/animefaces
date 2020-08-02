@@ -58,6 +58,12 @@ This is the implementation in my code:
 
 We create template for generator `train_datagen` and then we read the images in `train_generator` setting the batch size.
 
+The idea of autoencoder:
+
+![](./img/encoderdecoder.png)
+
+We encode our data and then we want our decoder to decode it.
+
 The next step is the creating the autoencoder which in my code is described in function `create_deep_conv_ae`.
 
 ![](./img/autoencoder.PNG)
