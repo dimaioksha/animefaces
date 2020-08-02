@@ -36,6 +36,12 @@ Typically, a model that generates arrays will use an Encoder to encode the input
 
 Decoder is used just for training encoder and for my task i dont use it more.
 
+**The idea of autoencoder**:
+
+![](./img/encoderdecoder.png)
+
+We encode our data and then we want our decoder to decode it.
+
 # Implementation
 
 **Dataset**
@@ -57,12 +63,6 @@ This is the implementation in my code:
 ![](./img/datagenerator.PNG)
 
 We create template for generator `train_datagen` and then we read the images in `train_generator` setting the batch size.
-
-The idea of autoencoder:
-
-![](./img/encoderdecoder.png)
-
-We encode our data and then we want our decoder to decode it.
 
 The next step is the creating the autoencoder which in my code is described in function `create_deep_conv_ae`.
 
