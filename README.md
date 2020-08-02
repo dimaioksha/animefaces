@@ -46,6 +46,16 @@ It contains 100.000 pixel images 64x64. The kind of it you could see at [Objecti
 
 **Coding**
 
+First of all we need to upload our data and make understandable view for Keras of it. We have `ImageDataGenerator` which will help us to enlarge our data and make more samples for our training set. Here is an example of how it works:
+
+![](./img/example.PNG)
+
+If we have a start image(at the example it is in blue circle), the DataGenerator will generate some another images, which will be like the first one.
+
+This is the implementation in my code:
+
+![](./img/datagenerator.PNG)
+
 Full process of coding described in my [Notebook](autoencoder.ipynb) `All comments are Russian there`
 
 # Results
